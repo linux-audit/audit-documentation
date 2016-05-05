@@ -1,0 +1,15 @@
+# Welcome the Linux Audit Documentation Project
+
+The Linux Audit Documentation project is intended to hold documentation and specifications related to the Linux Audit project.
+
+# Wiki
+
+The wiki holds a variety of information relating to Linux Audit.
+
+* https://github.com/linux-audit/audit-documentation/wiki
+
+# Mailing List
+
+Information on subscribing to the upstream Linux Audit mailing list, as well as archives, can be found at:
+
+* https://www.redhat.com/mailman/listinfo/linux-audit
