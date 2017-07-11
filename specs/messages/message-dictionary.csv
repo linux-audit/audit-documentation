@@ -1,0 +1,196 @@
+MACRO NAME,VALUE,DESCRIPITON
+AUDIT_GET,1000,Get status
+AUDIT_SET,1001,Set status (enable/disable/auditd)
+AUDIT_LIST,1002,List syscall rules -- deprecated
+AUDIT_ADD,1003,Add syscall rule -- deprecated
+AUDIT_DEL,1004,Delete syscall rule -- deprecated
+AUDIT_USER,1005,Message from userspace -- deprecated
+AUDIT_LOGIN,1006,Define the login ID and information
+AUDIT_WATCH_INS,1007,Insert file/dir watch entry
+AUDIT_WATCH_REM,1008,Remove file/dir watch entry
+AUDIT_WATCH_LIST,1009,List all file/dir watches
+AUDIT_SIGNAL_INFO,1010,Get info about sender of signal to auditd
+AUDIT_ADD_RULE,1011,Add syscall filtering rule
+AUDIT_DEL_RULE,1012,Delete syscall filtering rule
+AUDIT_LIST_RULES,1013,List syscall filtering rules
+AUDIT_TRIM,1014,Trim junk from watched tree
+AUDIT_MAKE_EQUIV,1015,Append to watched tree
+AUDIT_TTY_GET,1016,Get TTY auditing status
+AUDIT_TTY_SET,1017,Set TTY auditing status
+AUDIT_SET_FEATURE,1018,Turn an audit feature on or off
+AUDIT_GET_FEATURE,1019,Get which features are enabled
+AUDIT_USER_AUTH,1100,User system access authentication
+AUDIT_USER_ACCT,1101,User system access authorization
+AUDIT_USER_MGMT,1102,User acct attribute change
+AUDIT_CRED_ACQ,1103,User credential acquired
+AUDIT_CRED_DISP,1104,User credential disposed
+AUDIT_USER_START,1105,User session start
+AUDIT_USER_END,1106,User session end
+AUDIT_USER_AVC,1107,User space avc message
+AUDIT_USER_CHAUTHTOK,1108,User acct password or pin changed
+AUDIT_USER_ERR,1109,User acct state error
+AUDIT_CRED_REFR,1110,User credential refreshed
+AUDIT_USYS_CONFIG,1111,User space system config change
+AUDIT_USER_LOGIN,1112,User has logged in
+AUDIT_USER_LOGOUT,1113,User has logged out
+AUDIT_ADD_USER,1114,User account added
+AUDIT_DEL_USER,1115,User account deleted
+AUDIT_ADD_GROUP,1116,Group account added
+AUDIT_DEL_GROUP,1117,Group account deleted
+AUDIT_DAC_CHECK,1118,User space DAC check results
+AUDIT_CHGRP_ID,1119,User space group ID changed
+AUDIT_TEST,1120,Used for test success messages
+AUDIT_TRUSTED_APP,1121,Trusted app msg - freestyle text
+AUDIT_USER_SELINUX_ERR,1122,SE Linux user space error
+AUDIT_USER_CMD,1123,User shell command and args
+AUDIT_USER_TTY,1124,Non-ICANON TTY input meaning
+AUDIT_CHUSER_ID,1125,Changed user ID supplemental data
+AUDIT_GRP_AUTH,1126,Authentication for group password
+AUDIT_SYSTEM_BOOT,1127,System boot
+AUDIT_SYSTEM_SHUTDOWN,1128,System shutdown
+AUDIT_SYSTEM_RUNLEVEL,1129,System runlevel change
+AUDIT_SERVICE_START,1130,Service (daemon) start
+AUDIT_SERVICE_STOP,1131,Service (daemon) stop
+AUDIT_GRP_MGMT,1132,Group account attr was modified
+AUDIT_GRP_CHAUTHTOK,1133,Group acct password or pin changed
+AUDIT_MAC_CHECK,1134,User space MAC decision results
+AUDIT_ACCT_LOCK,1135,User's account locked by admin
+AUDIT_ACCT_UNLOCK,1136,User's account unlocked by admin
+AUDIT_DAEMON_START,1200,Daemon startup record
+AUDIT_DAEMON_END,1201,Daemon normal stop record
+AUDIT_DAEMON_ABORT,1202,Daemon error stop record
+AUDIT_DAEMON_CONFIG,1203,Daemon config change
+AUDIT_DAEMON_RECONFIG,1204,Auditd should reconfigure
+AUDIT_DAEMON_ROTATE,1205,Auditd should rotate logs
+AUDIT_DAEMON_RESUME,1206,Auditd should resume logging
+AUDIT_DAEMON_ACCEPT,1207,Auditd accepted remote connection
+AUDIT_DAEMON_CLOSE,1208,Auditd closed remote connection
+AUDIT_DAEMON_ERR,1209,Auditd internal error
+AUDIT_SYSCALL,1300,Syscall event
+AUDIT_FS_WATCH,1301,Deprecated
+AUDIT_PATH,1302,Filename path information
+AUDIT_IPC,1303,IPC record
+AUDIT_SOCKETCALL,1304,sys_socketcall arguments
+AUDIT_CONFIG_CHANGE,1305,Audit system configuration change
+AUDIT_SOCKADDR,1306,sockaddr copied as syscall arg
+AUDIT_CWD,1307,Current working directory
+AUDIT_EXECVE,1309,execve arguments
+AUDIT_IPC_SET_PERM,1311,IPC new permissions record type
+AUDIT_MQ_OPEN,1312,POSIX MQ open record type
+AUDIT_MQ_SENDRECV,1313,POSIX MQ send/receive record type
+AUDIT_MQ_NOTIFY,1314,POSIX MQ notify record type
+AUDIT_MQ_GETSETATTR,1315,POSIX MQ get/set attribute record type
+AUDIT_KERNEL_OTHER,1316,For use by 3rd party modules
+AUDIT_FD_PAIR,1317,audit record for pipe/socketpair
+AUDIT_OBJ_PID,1318,ptrace target
+AUDIT_TTY,1319,Input on an administrative TTY
+AUDIT_EOE,1320,End of multi-record event
+AUDIT_BPRM_FCAPS,1321,Information about fcaps increasing perms
+AUDIT_CAPSET,1322,Record showing argument to sys_capset
+AUDIT_MMAP,1323,Record showing descriptor and flags in mmap
+AUDIT_NETFILTER_PKT,1324,Packets traversing netfilter chains
+AUDIT_NETFILTER_CFG,1325,Netfilter chain modifications
+AUDIT_SECCOMP,1326,Secure Computing event
+AUDIT_PROCTITLE,1327,Process Title info
+AUDIT_FEATURE_CHANGE,1328,Audit feature changed value
+AUDIT_REPLACE,1329,Replace auditd if this probe unanswerd
+AUDIT_KERN_MODULE,1330,Kernel Module events
+AUDIT_AVC,1400,SE Linux avc denial or grant
+AUDIT_SELINUX_ERR,1401,Internal SE Linux Errors
+AUDIT_AVC_PATH,1402,"dentry, vfsmount pair from avc"
+AUDIT_MAC_POLICY_LOAD,1403,Policy file load
+AUDIT_MAC_STATUS,1404,"Changed enforcing,permissive,off"
+AUDIT_MAC_CONFIG_CHANGE,1405,Changes to booleans
+AUDIT_MAC_UNLBL_ALLOW,1406,NetLabel: allow unlabeled traffic
+AUDIT_MAC_CIPSOV4_ADD,1407,NetLabel: add CIPSOv4 DOI entry
+AUDIT_MAC_CIPSOV4_DEL,1408,NetLabel: del CIPSOv4 DOI entry
+AUDIT_MAC_MAP_ADD,1409,NetLabel: add LSM domain mapping
+AUDIT_MAC_MAP_DEL,1410,NetLabel: del LSM domain mapping
+AUDIT_MAC_IPSEC_ADDSA,1411,Not used
+AUDIT_MAC_IPSEC_DELSA,1412,Not used
+AUDIT_MAC_IPSEC_ADDSPD,1413,Not used
+AUDIT_MAC_IPSEC_DELSPD,1414,Not used
+AUDIT_MAC_IPSEC_EVENT,1415,Audit an IPSec event
+AUDIT_MAC_UNLBL_STCADD,1416,NetLabel: add a static label
+AUDIT_MAC_UNLBL_STCDEL,1417,NetLabel: del a static label
+AUDIT_MAC_CALIPSO_ADD,1418,NetLabel: add CALIPSO DOI entry
+AUDIT_MAC_CALIPSO_DEL,1419,NetLabel: del CALIPSO DOI entry
+AUDIT_AA,1500,
+AUDIT_APPARMOR_AUDIT,1501,
+AUDIT_APPARMOR_ALLOWED,1502,
+AUDIT_APPARMOR_DENIED,1503,
+AUDIT_APPARMOR_HINT,1504,
+AUDIT_APPARMOR_STATUS,1505,
+AUDIT_APPARMOR_ERROR,1506,
+AUDIT_ANOM_PROMISCUOUS,1700,Device changed promiscuous mode
+AUDIT_ANOM_ABEND,1701,Process ended abnormally
+AUDIT_ANOM_LINK,1702,Suspicious use of file links
+AUDIT_INTEGRITY_DATA,1800,Data integrity verification
+AUDIT_INTEGRITY_METADATA,1801,Metadata integrity verification
+AUDIT_INTEGRITY_STATUS,1802,Integrity enable status
+AUDIT_INTEGRITY_HASH,1803,Integrity HASH type
+AUDIT_INTEGRITY_PCR,1804,PCR invalidation msgs
+AUDIT_INTEGRITY_RULE,1805,Policy rule
+AUDIT_KERNEL,2000,Asynchronous audit record. NOT A REQUEST.
+AUDIT_ANOM_LOGIN_FAILURES,2100,Failed login limit reached
+AUDIT_ANOM_LOGIN_TIME,2101,Login attempted at bad time
+AUDIT_ANOM_LOGIN_SESSIONS,2102,Max concurrent sessions reached
+AUDIT_ANOM_LOGIN_ACCT,2103,Login attempted to watched acct
+AUDIT_ANOM_LOGIN_LOCATION,2104,Login from forbidden location
+AUDIT_ANOM_MAX_DAC,2105,Max DAC failures reached
+AUDIT_ANOM_MAX_MAC,2106,Max MAC failures reached
+AUDIT_ANOM_AMTU_FAIL,2107,AMTU failure
+AUDIT_ANOM_RBAC_FAIL,2108,RBAC self test failure
+AUDIT_ANOM_RBAC_INTEGRITY_FAIL,2109,RBAC file integrity failure
+AUDIT_ANOM_CRYPTO_FAIL,2110,Crypto system test failure
+AUDIT_ANOM_ACCESS_FS,2111,Access of file or dir
+AUDIT_ANOM_EXEC,2112,Execution of file
+AUDIT_ANOM_MK_EXEC,2113,Make an executable
+AUDIT_ANOM_ADD_ACCT,2114,Adding an acct
+AUDIT_ANOM_DEL_ACCT,2115,Deleting an acct
+AUDIT_ANOM_MOD_ACCT,2116,Changing an acct
+AUDIT_ANOM_ROOT_TRANS,2117,User became root
+AUDIT_RESP_ANOMALY,2200,Anomaly not reacted to
+AUDIT_RESP_ALERT,2201,Alert email was sent
+AUDIT_RESP_KILL_PROC,2202,Kill program
+AUDIT_RESP_TERM_ACCESS,2203,Terminate session
+AUDIT_RESP_ACCT_REMOTE,2204,Acct locked from remote access
+AUDIT_RESP_ACCT_LOCK_TIMED,2205,User acct locked for time
+AUDIT_RESP_ACCT_UNLOCK_TIMED,2206,User acct unlocked from time
+AUDIT_RESP_ACCT_LOCK,2207,User acct was locked
+AUDIT_RESP_TERM_LOCK,2208,Terminal was locked
+AUDIT_RESP_SEBOOL,2209,Set an SE Linux boolean
+AUDIT_RESP_EXEC,2210,Execute a script
+AUDIT_RESP_SINGLE,2211,Go to single user mode
+AUDIT_RESP_HALT,2212,take the system down
+AUDIT_USER_ROLE_CHANGE,2300,User changed to a new role
+AUDIT_ROLE_ASSIGN,2301,Admin assigned user to role
+AUDIT_ROLE_REMOVE,2302,Admin removed user from role
+AUDIT_LABEL_OVERRIDE,2303,Admin is overriding a label
+AUDIT_LABEL_LEVEL_CHANGE,2304,Object's level was changed
+AUDIT_USER_LABELED_EXPORT,2305,Object exported with label
+AUDIT_USER_UNLABELED_EXPORT,2306,Object exported without label
+AUDIT_DEV_ALLOC,2307,Device was allocated
+AUDIT_DEV_DEALLOC,2308,Device was deallocated
+AUDIT_FS_RELABEL,2309,Filesystem relabeled
+AUDIT_USER_MAC_POLICY_LOAD,2310,Userspc daemon loaded policy
+AUDIT_ROLE_MODIFY,2311,Admin modified a role
+AUDIT_USER_MAC_CONFIG_CHANGE,2312,Change made to MAC policy
+AUDIT_CRYPTO_TEST_USER,2400,Crypto test results
+AUDIT_CRYPTO_PARAM_CHANGE_USER,2401,Crypto attribute change
+AUDIT_CRYPTO_LOGIN,2402,Logged in as crypto officer
+AUDIT_CRYPTO_LOGOUT,2403,Logged out from crypto
+AUDIT_CRYPTO_KEY_USER,2404,"Create,delete,negotiate"
+AUDIT_CRYPTO_FAILURE_USER,2405,"Fail decrypt,encrypt,randomiz"
+AUDIT_CRYPTO_REPLAY_USER,2406,Crypto replay detected
+AUDIT_CRYPTO_SESSION,2407,Record parameters set during TLS session establishment
+AUDIT_CRYPTO_IKE_SA,2408,Record parameters related to IKE SA
+AUDIT_CRYPTO_IPSEC_SA,2409,Record parameters related to IPSEC SA
+AUDIT_VIRT_CONTROL,2500,"Start, Pause, Stop VM"
+AUDIT_VIRT_RESOURCE,2501,Resource assignment
+AUDIT_VIRT_MACHINE_ID,2502,Binding of label to VM
+AUDIT_VIRT_INTEGRITY_CHECK,2503,Guest integrity results
+AUDIT_VIRT_CREATE,2504,Creation of guest image
+AUDIT_VIRT_DESTROY,2505,Destruction of guest image
+AUDIT_VIRT_MIGRATE_IN,2506,Inbound guest migration info
+AUDIT_VIRT_MIGRATE_OUT,2507,Outbound guest migration info
