@@ -56,6 +56,7 @@ AUDIT_GRP_CHAUTHTOK,1133,USER,IND,Group account password or PIN changed
 AUDIT_MAC_CHECK,1134,USER,IND,User space MAC (Mandatory Access Control) decision results
 AUDIT_ACCT_LOCK,1135,USER,IND,User's account locked by admin
 AUDIT_ACCT_UNLOCK,1136,USER,IND,User's account unlocked by admin
+AUDIT_USER_DEVICE,1137,USER,IND,User space hotplug device changes
 AUDIT_DAEMON_START,1200,USER,IND,Daemon startup record
 AUDIT_DAEMON_END,1201,USER,IND,Daemon normal stop record
 AUDIT_DAEMON_ABORT,1202,USER,IND,Daemon error stop record
