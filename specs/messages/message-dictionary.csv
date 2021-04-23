@@ -57,6 +57,7 @@ AUDIT_MAC_CHECK,1134,USER,IND,User space MAC (Mandatory Access Control) decision
 AUDIT_ACCT_LOCK,1135,USER,IND,User's account locked by admin
 AUDIT_ACCT_UNLOCK,1136,USER,IND,User's account unlocked by admin
 AUDIT_USER_DEVICE,1137,USER,IND,User space hotplug device changes
+AUDIT_SOFTWARE_UPDATE,1138,USER,IND,Software update event
 AUDIT_DAEMON_START,1200,USER,IND,Daemon startup record
 AUDIT_DAEMON_END,1201,USER,IND,Daemon normal stop record
 AUDIT_DAEMON_ABORT,1202,USER,IND,Daemon error stop record
@@ -96,6 +97,11 @@ AUDIT_PROCTITLE,1327,KERN,SC,Process Title info
 AUDIT_FEATURE_CHANGE,1328,KERN,IND,Audit feature changed value
 AUDIT_REPLACE,1329,KERN,CTL,Replace auditd if this probe unanswerd
 AUDIT_KERN_MODULE,1330,KERN,SC,Kernel Module events
+AUDIT_FANOTIFY,1331,KERN,SC,Fanotify access decision
+AUDIT_TIME_INJOFFSET,1332,KERN,SC,Timekeeping offset injected
+AUDIT_TIME_ADJNTPVAL,1333,KERN,SC,NTP value adjustment
+AUDIT_BPF,1334,KERN,SC,BPF load/unload
+AUDIT_EVENT_LISTENER,1335,SC,audit mcast sock join/part
 AUDIT_AVC,1400,KERN,SC,SELinux AVC (Access Vector Cache) denial or grant
 AUDIT_SELINUX_ERR,1401,KERN,SC,Internal SELinux errors
 AUDIT_AVC_PATH,1402,KERN,SC,"dentry, vfsmount pair from AVC"
@@ -127,6 +133,7 @@ AUDIT_APPARMOR_KILL,1507,KERN,SC,
 AUDIT_ANOM_PROMISCUOUS,1700,KERN,SC/IND,Device changed promiscuous mode
 AUDIT_ANOM_ABEND,1701,KERN,IND,Process ended abnormally
 AUDIT_ANOM_LINK,1702,KERN,SC?,Suspicious use of file links
+AUDIT_ANOM_CREAT,1703,KERN,SC?,Suspicious file creation
 AUDIT_INTEGRITY_DATA,1800,KERN,SC,Data integrity verification
 AUDIT_INTEGRITY_METADATA,1801,KERN,SC,Metadata integrity verification
 AUDIT_INTEGRITY_STATUS,1802,KERN,SC,Integrity enable status
@@ -154,6 +161,7 @@ AUDIT_ANOM_ADD_ACCT,2114,USER,IND,Adding a user account ended abnormally
 AUDIT_ANOM_DEL_ACCT,2115,USER,IND,Deleting a user account ended abnormally
 AUDIT_ANOM_MOD_ACCT,2116,USER,IND,Changing an account ended abnormally
 AUDIT_ANOM_ROOT_TRANS,2117,USER,IND,User became root
+AUDIT_ANOM_LOGIN_SERVICE,2118,USER,IND,Service acct attempted login
 AUDIT_RESP_ANOMALY,2200,USER,IND,Anomaly not reacted to
 AUDIT_RESP_ALERT,2201,USER,IND,Alert email was sent
 AUDIT_RESP_KILL_PROC,2202,USER,IND,Kill program
@@ -167,6 +175,8 @@ AUDIT_RESP_SEBOOL,2209,USER,IND,Set an SELinux boolean
 AUDIT_RESP_EXEC,2210,USER,IND,Execute a script
 AUDIT_RESP_SINGLE,2211,USER,IND,Go to single user mode
 AUDIT_RESP_HALT,2212,USER,IND,Take the system down
+AUDIT_RESP_ORIGIN_BLOCK,2213,USER,IND,Address blocked by iptables
+AUDIT_RESP_ORIGIN_BLOCK_TIMED,2214,USER,IND,Address blocked for time
 AUDIT_USER_ROLE_CHANGE,2300,USER,IND,User changed to a new SELinux role
 AUDIT_ROLE_ASSIGN,2301,USER,IND,Administrator assigned user to SELinux role
 AUDIT_ROLE_REMOVE,2302,USER,IND,Administrator removed user from SELinux role
@@ -180,6 +190,7 @@ AUDIT_FS_RELABEL,2309,USER,IND,Filesystem relabeled
 AUDIT_USER_MAC_POLICY_LOAD,2310,USER,IND,Usersapce daemon loaded SELinux policy
 AUDIT_ROLE_MODIFY,2311,USER,IND,Administrator modified an SELinux role
 AUDIT_USER_MAC_CONFIG_CHANGE,2312,USER,IND,Change made to MAC (Mandatory Access Control) policy
+AUDIT_USER_MAC_STATUS,2313,USER,IND,Userspc daemon enforcing change
 AUDIT_CRYPTO_TEST_USER,2400,USER,IND,Cryptographic test results
 AUDIT_CRYPTO_PARAM_CHANGE_USER,2401,USER,IND,Cryptographic attribute change
 AUDIT_CRYPTO_LOGIN,2402,USER,IND,Cryptographic officer login
