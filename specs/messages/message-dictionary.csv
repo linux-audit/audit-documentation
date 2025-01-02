@@ -1,4 +1,4 @@
-MACRO NAME,VALUE,ORIGIN,CLASS,DESCRIPITON
+MACRO NAME,VALUE,ORIGIN,CLASS,DESCRIPTION
 AUDIT_GET,1000,USER,CTL,Get status
 AUDIT_SET,1001,USER,CTL,Set status (enable/disable/auditd)
 AUDIT_LIST,1002,USER,DEP,List syscall rules -- deprecated
@@ -95,7 +95,7 @@ AUDIT_NETFILTER_CFG,1325,KERN,IND/SC,Netfilter chain modifications
 AUDIT_SECCOMP,1326,KERN,IND,Secure Computing event
 AUDIT_PROCTITLE,1327,KERN,SC,Process Title info
 AUDIT_FEATURE_CHANGE,1328,KERN,IND,Audit feature changed value
-AUDIT_REPLACE,1329,KERN,CTL,Replace auditd if this probe unanswerd
+AUDIT_REPLACE,1329,KERN,CTL,Replace auditd if this probe unanswered
 AUDIT_KERN_MODULE,1330,KERN,SC,Kernel Module events
 AUDIT_FANOTIFY,1331,KERN,SC,Fanotify access decision
 AUDIT_TIME_INJOFFSET,1332,KERN,SC,Timekeeping offset injected
@@ -191,10 +191,10 @@ AUDIT_USER_UNLABELED_EXPORT,2306,USER,IND,Object exported without SELinux label
 AUDIT_DEV_ALLOC,2307,USER,IND,Device was allocated
 AUDIT_DEV_DEALLOC,2308,USER,IND,Device was deallocated
 AUDIT_FS_RELABEL,2309,USER,IND,Filesystem relabeled
-AUDIT_USER_MAC_POLICY_LOAD,2310,USER,IND,Usersapce daemon loaded SELinux policy
+AUDIT_USER_MAC_POLICY_LOAD,2310,USER,IND,Userspace daemon loaded SELinux policy
 AUDIT_ROLE_MODIFY,2311,USER,IND,Administrator modified an SELinux role
 AUDIT_USER_MAC_CONFIG_CHANGE,2312,USER,IND,Change made to MAC (Mandatory Access Control) policy
-AUDIT_USER_MAC_STATUS,2313,USER,IND,Userspc daemon enforcing change
+AUDIT_USER_MAC_STATUS,2313,USER,IND,Userspace daemon enforcing change
 AUDIT_CRYPTO_TEST_USER,2400,USER,IND,Cryptographic test results
 AUDIT_CRYPTO_PARAM_CHANGE_USER,2401,USER,IND,Cryptographic attribute change
 AUDIT_CRYPTO_LOGIN,2402,USER,IND,Cryptographic officer login
